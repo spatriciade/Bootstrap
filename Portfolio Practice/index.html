@@ -1,51 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DRY&DEV</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dry&Dev</title>
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link href="/Portfolio Practice/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="/Portfolio Practice/CSS/owl.carousel.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+      href="/Portfolio Practice/CSS/owl.theme.default.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="/Portfolio Practice/CSS/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="/Portfolio Practice/CSS/main.css" rel="stylesheet" />
   </head>
+
   <body>
-    <!-- navbar -->
-    <nav class="navbar-custom">
-      <a class="DRY&DEV-brand">DRY&DEV</a>
-      <!--logo creado con IA -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div>
-        <ul class="navbar-main">
-          <li class="navbar-item1"><a href="#">Services</a></li>
-          <li class="navbar-item2"><a href="#">About me!</a></li>
-          <li class="navbar-item3"><a href="#">Contact</a></li>
-        </ul>
-        <form class="navbar-searchB">
-          <input
-            class="navbar-searchBfield"
-            type="search"
-            placeholder="Type here..."
-            aria-label="Search"
-          />
-          <button class="navbar-searchBC" type="submit">Search</button>
-        </form>
+    <!-- nav -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-default navbar-fixed-top navbar-custom"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <!-- button -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span> Menú
+            <i class="fa fa-bars"></i>
+          </button>
+          <!-- button 2 -->
+          <a class="navbar-brand" href="#"
+            >Dry&Dev <i class="fa-solid fa-wand-magic-sparkles"></i
+          ></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- item list -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll">
+              <a href="#">Home</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#About">About</a>
+            </li>
+            <li class="page-scroll">
+              <a href="https://github.com/spatriciade">Portfolio</a>
+            </li>
+            <form role="search" class="navbar-form navbar-right">
+              <div class="form-group">
+                <input type="text" placeholder="Search" class="form-control" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+          </ul>
+        </div>
       </div>
     </nav>
+    <!-- carousel -->
+    <div id="home" class="header">
+      <div class="owl-carousel">
+        <div class="container container-header">
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+              <img class="img-responsive" src="/Portfolio Practice/images/logo1mini.jpg" alt="Office Management Services" />
+              <div class="intro-text">
+                <span class="name">Office Management Services</span>
+                <hr class="star-light" />
+                <span class="skills">Comprehensive Office Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-header">
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+              <img class="img-responsive" src="/Portfolio Practice/images/logo1mini.jpg" alt="Office Management Services" />
+              <div class="intro-text">
+                <span class="name">Technical Support Services</span>
+                <hr class="star-light" />
+                <span class="skills">Dedicated Technical Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-header">
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+              <img class="img-responsive" src="/Portfolio Practice/images/logo1mini.jpg" alt="Office Management Services" />
+              <div class="intro-text">
+                <span class="name">Financial and Cryptocurrency Management</span>
+                <hr class="star-light" />
+                <span class="skills">Financial planning, transaction management, and regulatory compliance.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-header">
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+              <img class="img-responsive" src="/Portfolio Practice/images/logo1mini.jpg" alt="Office Management Services" />
+              <div class="intro-text">
+                <span class="name">KYC Compliance Solutions</span>
+                <hr class="star-light" />
+                <span class="skills">Customer verification processes to safeguard your operations and maintain compliance.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-header">
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+              <img class="img-responsive" src="/Portfolio Practice/images/logo1mini.jpg" alt="Office Management Services" />
+              <div class="intro-text">
+                <span class="name">IT Collaboration and Development</span>
+                <hr class="star-light" />
+                <span class="skills">System development, feature implementation, and performance optimization.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-header">
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+              <img class="img-responsive" src="/Portfolio Practice/images/logo1mini.jpg" alt="Office Management Services" />
+              <div class="intro-text">
+                <span class="name">Testing & Quality Assurance</span>
+                <hr class="star-light" />
+                <span class="skills">Comprehensive Testing & QA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-header">
+          <div class="row">
+            <div class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+              <img class="img-responsive" src="/Portfolio Practice/images/logo1mini.jpg" alt="Office Management Services" />
+              <div class="intro-text">
+                <span class="name">Social Media Management</span>
+                <hr class="star-light" />
+                <span class="skills">Social Media Engagement and Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="About" class="about-section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          Over the past decade, I've embarked on a professional journey that has led me through a diverse array of roles, including office management, customer support services, KYC specialist, financial services and cryptocurrencies BTC & ETH. Throughout this journey, I've simultaneously delved into the realms of web development and IT, expanding my skill set and knowledge base.
+        </p>
+      </div>
+    </div>
+
+
+    </div>
+    <section id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Contact</h2>
+            <hr class="star-primary" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="row control-group">
+                <div
+                  class="form-group col-xs-12 floating-label-form-group controls"
+                >
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                    id="name"
+                    required
+                    data-validation-required-message="Please, provide your details."
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div
+                  class="form-group col-xs-12 floating-label-form-group controls"
+                >
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    id="email"
+                    required
+                    data-validation-required-message="Please, provide your details."
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div
+                  class="form-group col-xs-12 floating-label-form-group controls"
+                >
+                  <label>Phone number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Número de teléfono"
+                    id="phone"
+                    required
+                    data-validation-required-message= "Please, provide your details."
+                  />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div
+                  class="form-group col-xs-12 floating-label-form-group controls"
+                >
+                  <label>Message</label>
+                  <textarea
+                    rows="5"
+                    class="form-control"
+                    placeholder="Mensaje"
+                    id="message"
+                    required
+                    data-validation-required-message="Please, provide your details."
+                  ></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br />
+              <div id="success"></div>
+              <div class="row">
+                <div class="form-group col-xs-12">
+                  <button type="submit" class="btn btn-success btn-lg">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer here -->
+    <footer class="text-center footer-style">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <h3>Dry & Dev</h3>
+            <p>
+              Don´t repeat yourself <br />
+              and develop <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </p>
+          </div>
+          <div class="col-md-4 footer-col">
+            <h3>Social Media</h3>
+            <ul class="list-inline">
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-google-plus"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#" class="btn-social btn-outline"
+                  ><i class="fa fa-fw fa-dribbble"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-col">
+            <h3>Dry & Dev</h3>
+            <blockquote id="cita"></blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aquí se añade el código del flotante de botones -->
+      <div class="fab-container">
+        <div class="fab shadow">
+          <div class="fab-content">
+            <span class="material-icons">support_agent</span>
+          </div>
+        </div>
+        <div class="sub-button shadow">
+          <a href="google.com" target="_blank">
+            <span class="material-icons">phone</span>
+          </a>
+        </div>
+        <div class="sub-button shadow">
+          <a href="google.com" target="_blank">
+            <span class="material-icons">mail_outline</span>
+          </a>
+        </div>
+        <div class="sub-button shadow">
+          <a href="google.com" target="_blank">
+            <span class="material-icons">language</span>
+          </a>
+        </div>
+        <div class="sub-button shadow">
+          <a href="google.com" target="_blank">
+            <span class="material-icons">help_outline</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="/Portfolio Practice/JS/jquery.min.js"></script>
+    <script src="/Portfolio Practice/JS/bootstrap.min.js"></script>
+    <script src="/Portfolio Practice/JS/jqBootstrapValidation.js"></script>
+    <script src="/Portfolio Practice/JS/contact_me.js"></script>
+    <script src="/Portfolio Practice/JS/owl.carousel.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e55251c686.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Portfolio Practice/JS/main.js"></script>
   </body>
-  <script src="/JS/app.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>
